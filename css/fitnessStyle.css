@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("gympic.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.nav-area{
+  background: #1b1b1b;
+  transition: top .5s;
+  font-family: "Jost", sans-serif;
+}
+.nav-area:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.nav-area ul{
+  float: left;
+  list-style: none;
+  margin-right: 40px;
+  position: relative;
+}
+.nav-area ul li{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 20px;
+}
+.nav-area ul li a, .nav-area ul li i{
+  font-family: "Jost", sans-serif;
+  color: white;
+  text-decoration: none;
+  line-height: 97px;
+  font-size: 24px;
+  padding: 3px 27px;
+}
+.nav-area ul li a:hover{
+  box-shadow: 0 0 5px #eb3349, 0 0 5px #f45c43;
+  border-radius: 5px;
+  color: #f45c43;
+  transition: all .2s;
+}
+#logo{
+    background-image: url('logo.png');
+    background-size: 100%;
+    width: 240px;
+    height: 240px;
+    margin-top: -285px;
+    margin-left: 650px;
+    position: absolute;
+    transition: .5s;
+}
+#nav{
+    list-style-type: none;
+}
+.bigbutton{
+    text-align: center;
+    font-family: sans-serif;
+    color: #ff4d4d;
+    border-radius: 7px;
+    padding: 10px 10px;
+    width: 185px;
+    height: 55px;
+    margin-top: 195px;
+    box-shadow: 0 0 5px #ff0000;
+    position: absolute;
+    margin-left: 280px;
+    background: #330000;
+    cursor: pointer;
+    transition: .5s;
+    text-shadow: 1px 2px #000;
+}
+.bigbutton:hover{
+    box-shadow: 0 0 20px #ff0000;
+    color: #ff0000;
+    border-radius: 10px;
+    transform: scale(1.25);
+    transition: all .5s;
+    cursor: pointer;
+    text-shadow: 1px 2px #000;
+}
+.bottomlayer{
+    background-color: #383838;
+    padding: 150px 100px;
+    box-shadow: 0 0 2px 0 #000;
+    word-spacing: 15px;
+    line-height: 50px;
+    position: absolute;
+    margin-top: 450px;
+    width: 100%;
+    height: 600px;
+    transition: .5s;
+}
+.bottomlayer ul{
+    list-style-type: none;
+    transition: .5s;
+}
+.title{
+    position: absolute;
+    margin-top: -430px;
+    color: #ff3300;
+    margin-left: -10px;
+    transition: .5s;
+    text-shadow: 1px 2px #000;
+}
+.extra1{
+    background-color: #FF4500;
+    padding: 10px 100px;
+    position: absolute;
+    width: 100%;
+    margin-top: 410px;
+    transition: .5s;
+}
+.extra{
+    background-color: #FF8C00;
+    padding: 30px 100px;
+    position: absolute;
+    width: 100%;
+    margin-top: 430px;
+    transition: .5s;
+}
+.extra2{
+    background-color: #FF0000;
+    padding: 10px 100px;
+    position: absolute;
+    width: 100%;
+    margin-top: 390px;
+    transition: .5s;
+}
+#bmi ul{
+    list-style-type: none;
+    transition: .5s;
+}
+#bmi ul li{
+    position: absolute;
+    margin-left: 0px;
+    transition: .5s;
+}
+.content{
+    margin-top: -50px;
+    color: #fff;
+    word-spacing: 7px;
+    text-align: center;
+    transition: .5s;
+}
+.but{
+    text-align: center;
+    font-family: sans-serif;
+    color: #000;
+    border-radius: 7px;
+    padding: 10px 10px;
+    width: 185px;
+    height: 55px;
+    margin-top: 195px;
+    box-shadow: 0 0 5px #000;
+    position: absolute;
+    margin-left: 65px;
+    cursor: pointer;
+    transition: .5s;
+    text-shadow: 1px 2px #fff;
+}
+.but:hover{
+    box-shadow: 0 0 20px #FF4500;
+    color: #ff4d4d;
+    border-radius: 10px;
+    transform: scale(1.25);
+    transition: all .5s;
+    cursor: pointer;
+    text-shadow: 1px 2px #000;
+}
+.workbuttons{
+    display: inline-flex;
+    margin-top: 725px;
+    position: absolute;
+    transition: .5s;
+    text-shadow: 1px 2px #000;
+}
+.workbuttons ul li{
+    margin-top: 25px;
+    list-style-type: none;
+    color: #fff;
+    margin-left: 70px;
+    text-align: center;
+    transition: .5s;
+}
+.workbuttons li input[type="button"]{
+    background-color: #FF8C00;
+    color: #FFE4B5;
+    border-radius: 30px;
+    width: 160px;
+    height: 40px;
+    font-family: yu gothic medium;
+    font-size: 22px;
+    box-shadow: 0 0 5px #FF8C00;
+    cursor: pointer;
+    text-shadow: 1px 2px #000;
+}
+.workbuttons li input[type="button"]:hover{
+    transform: scale(1.25);
+    transition: .2s;
+    box-shadow: 0 0 20px #FF8C00;
+    text-shadow: 1px 2px #000;
+}
+.content{
+    margin-bottom: 45px;
+    transition: .5s;
+    text-shadow: 1px 2px #000;
+}
+.choose{
+    color: #fff;
+    margin-bottom: 25px;
+    text-align: center;
+    transition: .5s;
+    text-shadow: 1px 2px #000;
+}
