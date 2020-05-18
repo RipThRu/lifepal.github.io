@@ -1,0 +1,76 @@
+<html>
+    <head><title>
+            Lifepal | Registration</title>
+        <link rel="stylesheet" type="text/css" href="/css/registrationStyle.css"/>
+    </head>
+    <body>
+        <div class="form-container">
+            <div class="user-img"></div>
+            <div id="registration">
+                <p style="font-family: sans-serif; font-size: 28px"><strong>Registration</strong></p>
+            </div>
+            <div id = "error"></div>
+            <div class="menu-bar">
+                <ul class="option1">
+                    <li id="name1">
+                        <p style="font-family: sans-serif; font-size: 16px">Please enter your first name:</p>
+                    </li>
+                    <li id="name2">
+                        <input type = "text" id = "username" placeholder = "E.g. X � A-12" name = "" value = "">
+                    </li>
+                </ul>
+                <ul class="option2">
+                    <li id="name3">
+                        <p style="font-family: sans-serif; font-size: 16px">Please enter your last name:</p>
+                    </li>
+                    <li id="name4">
+                        <input type = "text" id = "password" placeholder = "E.g. Musk" name = "" value = "">
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper">
+              <div class = "select-box">
+                <div class = "options-container">
+                  <div class = "option">
+                    <input type = "radio" class = "radio" id = "male" name = "category">
+                    <label for = "male">Male</label>
+                  </div>
+                  <div class = "option">
+                    <input type = "radio" class = "radio" id = "female" name = "category">
+                    <label for = "female">Female</label>
+                  </div>
+                  <div class = "option">
+                    <input type = "radio" class = "radio" id = "other" name = "category">
+                    <label for = "other">Other</label>
+                  </div>
+                </div>
+                <div class = "selected">
+                  Gender
+                </div>
+              </div>
+            </div>
+            <form>
+                <label id="birthday1">Birthday:</label>
+                <input id="birthday2" type="date" min="1920-01-01" max="2020-01-01"/><br>
+            </form>
+            <ul class="list">
+                <li>
+                    <p style="font-family: sans-serif; font-size: 16px">Please enter desired username:</p>
+                </li>
+                <li>
+                    <input type="text" name="Username"/>
+                </li>
+                <li>
+                    <p style="font-family: sans-serif; font-size: 16px">Please enter desired password:</p>
+                </li>
+                <li>
+                    <input type="text" name="Password"/>
+                </li>
+                <li>
+                    <input id = "button" type="button" name="Enter" value="Submit" onclick = "redirect()"/>
+                </li>
+            </ul>
+        </div>
+        <script src = "/js/registrationJs.js"></script>
+    </body>
+</html>
