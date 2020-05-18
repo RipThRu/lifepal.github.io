@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+body{
+    background: url("clock.jpg");
+    background-size: contain;
+    background-position: center;
+    font-family: "Jost", sans-serif;
+}
+.nav-area{
+  background: #1b1b1b;
+  transition: top .5s;
+  font-family: "Jost", sans-serif;
+}
+.nav-area:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.nav-area ul{
+  float: left;
+  list-style: none;
+  margin-right: 40px;
+  position: relative;
+}
+.nav-area ul li{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 20px;
+}
+.nav-area ul li a, .nav-area ul li i{
+  font-family: "Jost", sans-serif;
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 3px 15px;
+}
+.nav-area ul li a:hover{
+  box-shadow: 0 0 5px #eb3349, 0 0 5px #f45c43;
+  border-radius: 5px;
+  color: #f45c43;
+  transition: all .2s;
+}
+#clock #digital{
+  display: flex;
+  margin-top: 7%;
+  padding: 0 27.3%;
+}
+#clock #digital div{
+  position: relative;
+  margin: 0 5px;
+}
+#clock #digital div span{
+  position: relative;
+  width: 200px;
+  height: 160px;
+  background: #d4bd50;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+  font-weight: 400px;
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1px #1b1b1b, 0 0 5px #000;
+}
+#clock #digital div span:nth-child(2){
+  height: 90px;
+  font-size: 30px;
+  font-weight: 500px;
+  background-color: #8e7c26;
+  box-shadow: none;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #1b1b1b, 0 0 2px #000;
+}
+.new{
+  margin-top: -4%;
+  margin-left: 33%;
+}
+.new #newAlarm{
+  background: none;
+  border: 2px solid #000;
+  width: 50%;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+  box-shadow: 0 0 1px #1b1b1b, 0 0 5px #000;
+  font-size: 18px;
+  padding: 5px;
+  margin: 12px 0;
+  cursor: pointer;
+  transition: .5s;
+  background: #d4bd50;
+  border-color: #d4bd50;
+}
+.content{
+  position: relative;
+  width: 100%;
+  height: 1500px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 0 5px #1b1b1b, 0 0 5px #000;
+}
+.content ul{
+  position: absolute;
+  margin-top: -15%;
+  align-items: center;
+  padding: 60px 420px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+.content ul li{
+  list-style: none;
+  background: #fff;
+  box-sizing: border-box;
+  height: 200px;
+  margin: 200px 0;
+  box-shadow: 0 0 5px #1b1b1b, 0 0 5px #000;
+}
+.content ul li .time{
+  position: relative;
+  padding: 5px;
+  background: #262626;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70%;
+  float: left;
+  text-align: center;
+  transition: .5s;
+}
+.content ul li:hover .time{
+  background: #d4bd50;
+}
+.content ul li .time h2{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 1px 2px #000;
+  font-size: 55px;
+}
+.content ul li .time h3{
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+}
+.content ul li .details{
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  height: 230px;
+  float: left;
+  display: inline-block;
+  font-family: "Jost", sans-serif;
+  box-shadow: 0 0 5px #1b1b1b, 0 0 5px #000;
+  transition: .5s;
+}
+.content ul li .details a{
+  display: inline-block;
+  margin-left: 150px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 2px solid #262626;
+  margin-top: 15px;
+  font-size: 18px;
+  transition: .5s;
+  color: black;
+  text-shadow: 1px 2px #fff;
+}
+.content ul li .details a:hover{
+  background: #d4bd50;
+  color: #fff;
+  border-color: #d4bd50;
+  text-shadow: 1px 2px #000;
+}
+.details #notes{
+  font-family: "Jost", sans-serif;
+  position: relative;
+  overflow: hidden;
+  color: black;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #000;
+  width: 350px;
+  height: 45px;
+}
+.details #confirm{
+  font-family: "Jost", sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin-left: 20px;
+  color: black;
+  padding: 10px;
+  background: #fff;
+  font-size: 15px;
+  width: 75px;
+  color: #000;
+  text-shadow: 1px 2px #fff;
+  border: 1px solid #000;
+  transition: .5s;
+}
+.details #confirm:hover{
+  cursor: pointer;
+  background: #d4bd50;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+  border-color: #d4bd50;
+  transition: .5s;
+}
+.details #chTime{
+  font-family: "Jost", sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin-left: 30px;
+  color: black;
+  padding: 10px;
+  background: #fff;
+  border-radius: 45%;
+  border: 1px solid #000;
+  transition: .5s;
+}
+.details #chTime:hover{
+  cursor: pointer;
+  background: #d4bd50;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+  border-color: #d4bd50;
+  transition: .5s;
+}
+.details #addQuiz{
+  font-family: "Jost", sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin-left: 30px;
+  color: black;
+  padding: 10px;
+  background: #fff;
+  border-radius: 45%;
+  border: 1px solid #000;
+  transition: .5s;
+}
+.details #addQuiz:hover{
+  cursor: pointer;
+  background: #d4bd50;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+  border-color: #d4bd50;
+  transition: .5s;
+}
+.details #chSound{
+  font-family: "Jost", sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin-left: 30px;
+  color: black;
+  padding: 10px;
+  background: #fff;
+  border-radius: 45%;
+  border: 1px solid #000;
+  transition: .5s;
+}
+.details #chSound:hover{
+  cursor: pointer;
+  background: #d4bd50;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+  border-color: #d4bd50;
+  transition: .5s;
+}
+#copyright{
+  padding: 0 44%;
+  text-shadow: 1px 2px #fff;
+}
