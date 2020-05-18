@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #bdc3c7, #2c3e50);
+    transition: all .5s;
+  }
+  .nav-area{
+    background: #1b1b1b;
+    transition: top .5s;
+    font-family: "Jost", sans-serif;
+  }
+  .nav-area:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .nav-area ul{
+    float: left;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+  }
+  .nav-area ul li{
+    float: left;
+    display: inline-block;
+    background: #1b1b1b;
+    margin: 0 20px;
+  }
+  .nav-area ul li a, .nav-area ul li i{
+    font-family: "Jost", sans-serif;
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 3px 15px;
+  }
+  .nav-area ul li a:hover{
+    box-shadow: 0 0 5px #eb3349, 0 0 5px #f45c43;
+    border-radius: 5px;
+    color: #f45c43;
+    transition: all .2s;
+  }
+.main{
+    background: url(logo.png) no-repeat;
+    background-size: 45%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background: white;
+    padding: 156.6px;
+    transition: 1s;
+}
+
+.inner-container h1{
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 18px;
+    color: #000;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 22px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 15px;
+}
+img{
+  display: inline-block;
+  max-width:230px;
+  max-height:95px;
+  margin-left: 3px;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .main{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .main{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
