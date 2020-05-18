@@ -1,0 +1,100 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(-45deg, #bdc3c7, #2c3e50) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.nav-area{
+  background: #1b1b1b;
+  transition: top .5s;
+  font-family: "Jost", sans-serif;
+}
+.nav-area:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.nav-area ul{
+  float: left;
+  list-style: none;
+  margin-right: 40px;
+  position: relative;
+}
+.nav-area ul li{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 20px;
+}
+.nav-area ul li a, .nav-area ul li i{
+  font-family: "Jost", sans-serif;
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 3px 15px;
+}
+.nav-area ul li a:hover{
+  box-shadow: 0 0 5px #eb3349, 0 0 5px #f45c43;
+  border-radius: 5px;
+  color: #f45c43;
+  transition: all .2s;
+}
+  .logo img{
+    max-width: 400px;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+  }
+  .icons{
+    list-style: square;
+  }
+   .icons li{
+     list-style: none;
+     display: inline-block;
+     font-size: 20px;
+     color: #000;
+     border: 1px solid #000;
+     text-shadow: 2px 3px #fff;
+     border-radius: 0%;
+     transition: .5s;
+     overflow: hidden;
+   }
+   .icons li a:hover{
+     color: #fff;
+     transition: .5s;
+     text-shadow: 2px 3px #000;
+     transform: scale(1.25);
+   }
+   .icons li a{
+     text-decoration: none;
+     color: black;
+   }
+   .icons li:nth-of-type(1){
+     background: linear-gradient(-45deg, #ff512f, #dd2476) no-repeat;
+     padding: 105px 303.2px;
+   }
+   .icons li:nth-of-type(2){
+     background: linear-gradient(45deg, #43cea2, #185a9d) no-repeat;
+     padding: 105px 307px;
+   }
+   .icons li:nth-of-type(3){
+     background: linear-gradient(-45deg, #eacda3, #d6ae7b) no-repeat;
+     padding: 105px 307.4px;
+   }
+   .icons li:nth-of-type(4){
+     background: linear-gradient(45deg, #56ab2f, #a8e063) no-repeat;
+     padding: 105px 303px;
+   }
+   #copyright{
+     padding: 0 44%;
+   }
